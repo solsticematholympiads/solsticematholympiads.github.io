@@ -1,0 +1,148 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  @keyframes flyInLeft {
+    from { transform: translateX(-30px); opacity: 0; }
+    to   { transform: translateX(0); opacity: 1; }
+  }
+  @keyframes flyInRight {
+    from { transform: translateX(40px); opacity: 0; }
+    to   { transform: translateX(0); opacity: 1; }
+  }
+  @keyframes smallBounce {
+    0%   { transform: scale(0.94); opacity: 0; }
+    50%  { transform: scale(1.05); opacity: 1; }
+    70%  { transform: scale(0.99); }
+    85%  { transform: scale(1.02); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  @keyframes scaleBounce {
+    0%   { transform: scale(0.93); opacity: 0; }
+    25%  { transform: scale(1.05); opacity: 1; }
+    45%  { transform: scale(0.985); }
+    65%  { transform: scale(1.025); }
+    80%  { transform: scale(0.995); }
+    90%  { transform: scale(1.01); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  .animate-on-scroll { opacity: 0; }
+  .visible { opacity: 1; }
+  .visible.fly-in-left { animation: flyInLeft 0.7s cubic-bezier(.4,1.8,.7,1) forwards; }
+  .visible.fly-in-right { animation: flyInRight 1.1s cubic-bezier(.4,1.8,.7,1) forwards; }
+  .visible.bounce-in-header { animation: smallBounce 1s forwards; }
+  .visible.bounce-in { animation: scaleBounce 1s forwards; transform-origin: center; }
+
+  .smo-desc {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 16px;
+    padding: 22px;
+    margin: 30px auto 38px auto;
+    max-width: 850px;
+    color: #111;
+    line-height: 1.55;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.04);
+  }
+
+  .section-box {
+    background: #23255a;
+    border-radius: 32px;
+    padding: 20px;
+    margin: 36px auto;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 850px;
+    width: 100%;
+  }
+
+  .section-header {
+    font-family: 'Cinzel Decorative', cursive, serif;
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 14px;
+    letter-spacing: 1.5px;
+  }
+
+  .section-divider {
+    width: 100%;
+    height: 4px;
+    background: #d5d7ed;
+    opacity: 0.38;
+    border-radius: 3px;
+    margin: 18px 0 24px 0;
+  }
+
+  .flex-box {
+    background: none;
+    border-radius: 32px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    max-width: 850px;
+    margin: 24px auto;
+    overflow: hidden;
+  }
+
+  .header-section {
+    background: #23255a;
+    padding: 20px 24px 15px 24px;
+    text-align: center;
+  }
+
+  .fly-in-section-header {
+    font-family: 'Cinzel Decorative', cursive, serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1.3px;
+    opacity: 0;
+  }
+
+  .fly-in-desc {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.35rem;
+    color: #232323;
+    font-weight: 500;
+    line-height: 1.32;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .button-row {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin: 10px 0 26px 0;
+    flex-wrap: wrap;
+  }
+
+  .custom-button {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #2b6cb0;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.4s;
+    cursor: pointer;
+    animation: scaleBounce 1s ease-out;
+    transform-origin: center;
+  }
+
+  .custom-button:hover {
+    background-color: #1a4e85;
+    transform: translateY(-4px);
+  }
+</style>
