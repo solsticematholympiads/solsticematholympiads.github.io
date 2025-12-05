@@ -1,3 +1,4 @@
+/* ==== IMPORTS ==== */
 fetch("../assets/includes/header.html")
   .then(response => response.text())
   .then(html => {
@@ -8,3 +9,15 @@ fetch("../assets/includes/header.html")
       else header.classList.remove('scrolled');
     });
   });
+
+/* ==== OBSERVERS ==== */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    } else {
+      entry.target.classList.remove("visible");
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll(".animate-on-scroll").forEach(el => observer.observe(el));
