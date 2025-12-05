@@ -3,26 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="../assets/style.css">
   <title>Winter Solstice Math Olympiad</title>
 </head>
-
 <body>
 
   <div id="header-container"></div>
-
   <section class="banner-box">
     <h1>Winter Solstice Math Olympiad</h1>
   </section>
 
   <script>
-    fetch("assets/includes/header.html")
+    fetch("../assets/includes/header.html")
       .then(response => response.text())
       .then(html => {
         document.getElementById("header-container").innerHTML = html;
-          const header = document.querySelector('.header');
-          window.addEventListener('scroll', () => {
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
           if (window.scrollY > 10) header.classList.add('scrolled');
           else header.classList.remove('scrolled');
         });
