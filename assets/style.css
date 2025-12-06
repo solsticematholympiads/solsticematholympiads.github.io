@@ -387,7 +387,7 @@ html, body {
   transform-origin: center;
 }
 .button.visible {
-  animation: bigBounce 1s forwards; transform-origin: center; 
+  animation: bigBounce 1s forwards; 
 }
 .button:hover {
   background-color: #1a4e85;
