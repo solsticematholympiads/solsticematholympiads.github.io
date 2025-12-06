@@ -207,7 +207,7 @@ html, body {
   to   { transform: translateX(0); opacity: 1; }
 }
 .visible.fly-in-left30 {
-  animation: flyInLeft 0.7s cubic-bezier(.4,1.8,.7,1) forwards; 
+  animation: flyInLeft30 0.7s cubic-bezier(.4,1.8,.7,1) forwards; 
 }
 
 @keyframes flyInLeft48 {
@@ -215,7 +215,7 @@ html, body {
   to   { transform: translateX(0); opacity: 1; }
 }
 .visible.fly-in-left48 {
-  animation: animation: flyInLeft 0.72s cubic-bezier(.4,1.8,.7,1) forwards;
+  animation: animation: flyInLeft48 0.72s cubic-bezier(.4,1.8,.7,1) forwards;
 } 
 
 @keyframes flyInRight40 {
@@ -223,7 +223,7 @@ html, body {
   to   { transform: translateX(0); opacity: 1; }
 }
 .visible.fly-in-right40 { 
-  animation: flyInRight 1.1s cubic-bezier(.4,1.8,.7,1) forwards; 
+  animation: flyInRight40 1.1s cubic-bezier(.4,1.8,.7,1) forwards; 
 }
 
 @keyframes flyInUp24 {
@@ -231,7 +231,7 @@ html, body {
   to   { transform: translateY(0); opacity: 1; }
 }
 .visible.fly-in-up24 {
-  animation: flyInUp 0.92s cubic-bezier(.4,1.8,.7,1) forwards;
+  animation: flyInUp24 0.92s cubic-bezier(.4,1.8,.7,1) forwards;
   animation-delay: 0.14s;
 }
 
