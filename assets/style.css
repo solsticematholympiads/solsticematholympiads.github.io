@@ -202,7 +202,7 @@ html, body {
   to   { transform: translateX(0); opacity: 1; }
 }
 .visible.fly-in-left48 {
-  animation: animation: flyInLeft48 0.72s cubic-bezier(.4,1.8,.7,1) forwards;
+  animation: flyInLeft48 0.72s cubic-bezier(.4,1.8,.7,1) forwards;
 } 
 
 @keyframes flyInRight40 {
@@ -233,7 +233,7 @@ html, body {
   animation: smallBounce 1s forwards; 
 }
 .visible.fast-small-bounce {
-  animation: animation: smallBounce 0.72s cubic-bezier(.4,1.8,.7,1) forwards;
+  animation: smallBounce 0.72s cubic-bezier(.4,1.8,.7,1) forwards;
 }
 
 @keyframes big-bounce {
