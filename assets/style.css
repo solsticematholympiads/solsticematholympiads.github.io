@@ -311,7 +311,7 @@ html, body {
 
 .darkblue-box-section-header {
   font-family: 'Trebuchet MS', sans-serif;
-  font-size: 1.4rem;
+  font-size: 22px;
   font-weight: 700;
   color: #232323;
   margin-bottom: 10px;
@@ -322,31 +322,17 @@ html, body {
 }
 
 .darkblue-box-section-body {
+  padding-left: 20px;
+  margin: 0;
+  opacity: 0;
   font-family: 'Trebuchet MS', sans-serif;
-  font-size: 1.05rem;
+  font-size: 16px;
   color: #222;
   line-height: 1.6;
-  opacity: 0;
 }
 .darkblue-box-section.visible .darkblue-box-section-body {
   animation: flyInLeft30 0.8s cubic-bezier(0.33,1,0.68,1) forwards;
   animation-delay: 0.12s;
-}
-
-.darkblue-box-section-bullets {
-  padding-left: 20px;
-  margin: 0;
-  opacity: 0;
-}
-.darkblue-box-section-bullets.visible .darkblue-box-section-body {
-  animation: flyInLeft30 0.8s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-  animation-delay: 0.12s;
-}
-.darkblue-box-section-bullets li {
-  font-family: 'Trebuchet MS', sans-serif;
-  font-size: 1.05rem;
-  color: #222;
-  margin-bottom: 8px;
 }
 
 /* = Box Style 3 =*/
@@ -371,7 +357,7 @@ html, body {
 }
 .section-card-header-text {
   font-family: 'Cinzel Decorative', serif;
-  font-size: 2.2rem;
+  font-size: 35px;
   color: #fff;
   font-weight: bold;
   margin: 0;
@@ -389,7 +375,7 @@ html, body {
 }
 .section-card-body-text {
   font-family: 'Trebuchet MS', sans-serif;
-  font-size: 1.35rem;
+  font-size: 22px;
   color: #232323;
   margin: 0;
   opacity: 0;
