@@ -190,6 +190,11 @@ html, body {
   opacity: 1; 
 }
 
+@keyframes flyInLeft20 {
+  from { transform: translateX(-20px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
 @keyframes flyInLeft30 {
   from { transform: translateX(-30px); opacity: 0; }
   to   { transform: translateX(0); opacity: 1; }
@@ -240,7 +245,7 @@ html, body {
 
 /* == Layouts ==*/
 
-/* = Box Style 1 =*/
+/* = Box Style 1 = */
 
 .lightblue-box {
   font-family: 'Trebuchet MS', sans-serif;
@@ -258,7 +263,7 @@ html, body {
   animation: flyInLeft30 0.7s cubic-bezier(.4,1.8,.7,1) forwards; 
 }
 
-/* = Box Style 2 =*/
+/* = Box Style 2 = */
 .darkblue-box {
   background: #23255a;
   border-radius: 32px;
@@ -342,7 +347,7 @@ html, body {
   animation-delay: 0.12s;
 }
 
-/* = Box Style 3 =*/
+/* = Box Style 3 = */
 .section-card {
   border-radius: 32px;
   margin: 24px auto;
@@ -399,6 +404,86 @@ html, body {
   height: 10px;
   background: linear-gradient(to bottom, rgba(35,37,90,0) 0%, rgba(255,255,255,0.4) 100%);
   border: none;
+}
+
+/* = Box Style 4 = */
+.schedule-box {
+  background: none;
+  border-radius: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  max-width: 850px;
+  margin: 24px auto;
+  overflow: hidden;
+}
+.schedule-box.visible {
+  animation: flyInLeft30 0.7s cubic-bezier(.4,1.8,.7,1) forwards;
+}
+
+.schedule-box-header {
+  background: #23255a;
+  padding: 20px 24px 15px 24px;
+  text-align: center;
+}
+.schedule-box-header-text {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1.3px;
+  opacity: 0;
+}
+.schedule-box-header-text.visible {
+  animation: smallBounce 1s forwards;
+}
+
+.schedule-box-divider {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to bottom, rgba(35,37,90,0) 0%, rgba(255,255,255,0.4) 100%);
+  border: none;
+}
+
+.schedule-section-body {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 26px 32px;
+  text-align: left;
+}
+.schedule-section-body-text {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.35rem;
+  color: #232323;
+  font-weight: 500;
+  line-height: 1.32;
+  margin: 0;
+  opacity: 0;
+}
+.schedule-section-body-text.visible {
+  animation: flyInLeft30 0.7s cubic-bezier(.4,1.8,.7,1) forwards;
+}
+
+.schedule-section-body-bullets {
+  list-style-type: disc;
+  padding-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.schedule-section-body-bullets li {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.1rem;
+  color: #232323;
+  opacity: 0;
+  margin-bottom: 12px;
+}
+.schedule-section-body-bullets li.visible{
+  animation: flyInLeft20 0.6s ease-out forwards;
+}
+.schedule-section-body-bullets li li {
+  list-style-type: circle;
+  padding-left: 32px;
+  margin-top: 6px;
+}
+.schedule-section-body-bullets li li.visible{
+  animation: flyInLeft20 0.6s ease-out forwards;
 }
 
 /* == Buttons == */
