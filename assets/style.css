@@ -200,9 +200,19 @@ html, body {
   to   { transform: translateX(0); opacity: 1; }
 }
 
+@keyframes flyInRight25 {
+  from { transform: translateX(25px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
 @keyframes flyInRight40 {
   from { transform: translateX(40px); opacity: 0; }
   to   { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes flyInUp20 {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
 }
 
 @keyframes flyInUp24 {
@@ -285,6 +295,46 @@ html, body {
   opacity: 0.38;
   border-radius: 3px;
   margin: 18px 0 24px 0;
+}
+
+.darkblue-box-section {
+  background: rgba(255,255,255,0.75);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin: 20px 0;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  opacity: 0;
+}
+.darkblue-box-section.visible {
+  animation: flyInUp 0.8s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+.darkblue-box-section-header {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #232323;
+  margin-bottom: 10px;
+  opacity: 0;
+}
+.darkblue-box-section.visible .darkblue-box-section-header {
+  animation: flyInRight25 0.8s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+.darkblue-box-section-body {
+  padding-left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.darkblue-box-section.visible .darkblue-box-section-body {
+  animation: flyInLeft30 0.8s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  animation-delay: 0.12s;
+}
+.darkblue-box-section-body li {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.05rem;
+  color: #222;
+  margin-bottom: 8px;
 }
 
 /* = Box Style 3 =*/
