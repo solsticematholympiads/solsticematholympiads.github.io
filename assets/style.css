@@ -306,7 +306,7 @@ html, body {
   opacity: 0;
 }
 .darkblue-box-section.visible {
-  animation: flyInUp 0.8s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  animation: flyInUp20 0.8s cubic-bezier(0.33, 1, 0.68, 1) forwards;
 }
 
 .darkblue-box-section-header {
