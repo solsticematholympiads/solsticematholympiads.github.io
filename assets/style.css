@@ -323,13 +323,16 @@ html, body {
 }
 
 .darkblue-box-section-body {
-  padding-left: 20px;
+  padding-left: 0px;
   margin: 0;
   opacity: 0;
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 16px;
   color: #222;
   line-height: 1.6;
+}
+.darkblue-box-section-body li {
+  margin-left: 20px;
 }
 .darkblue-box-section.visible .darkblue-box-section-body {
   animation: flyInLeft30 0.8s cubic-bezier(0.33,1,0.68,1) forwards;
