@@ -1,4 +1,4 @@
-/* ==== IMPORTS ==== */
+/* ==== HEADER ==== */
 fetch("/assets/includes/header.html")
   .then(response => response.text())
   .then(html => {
@@ -8,6 +8,13 @@ fetch("/assets/includes/header.html")
       header.classList.toggle('scrolled', window.scrollY > 10);
     });
   });
+
+/* ==== SPONSORS ==== */
+function loadSponsor(name) {
+  fetch(`/assets/includes/sponsors/${name}.html`)
+    .then(r => r.text())
+    .then(html => document.currentScript.parentElement.innerHTML = html);
+}
 
 /* ==== OBSERVERS ==== */
 const observer = new IntersectionObserver((entries) => {
