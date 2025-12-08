@@ -486,6 +486,32 @@ html, body {
   animation: flyInLeft20 0.6s ease-out forwards;
 }
 
+/* = Scrolling Header = */
+
+.scroll-banner-box {
+  max-width: 850px;
+  margin: 0 auto 16px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #d5d7ed;
+  padding: 10px 0;
+}
+
+.scroll-banner-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: bannerScroll 12s linear infinite;
+}
+
+.scroll-banner-text {
+  display: inline-block;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #23255a;
+  padding: 0 40px;
+}
+
 /* == Buttons == */
 
 .button-row {
