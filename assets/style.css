@@ -537,7 +537,7 @@ html, body {
 
 .scroll-banner-box {
   max-width: 850px;
-  margin: 0 auto 16px auto;
+  margin: 20px auto 16px auto;
   overflow: hidden;
   border-radius: 12px;
   background: #d5d7ed;
