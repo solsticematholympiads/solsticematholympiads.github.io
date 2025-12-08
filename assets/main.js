@@ -9,13 +9,6 @@ fetch("/assets/includes/header.html")
     });
   });
 
-/* ==== SPONSORS ==== */
-function loadSponsor(name) {
-  fetch(`/assets/includes/sponsors/${name}.html`)
-    .then(r => r.text())
-    .then(html => document.currentScript.parentElement.innerHTML = html);
-}
-
 /* ==== OBSERVERS ==== */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
