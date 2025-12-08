@@ -382,6 +382,9 @@ html, body {
   margin: 0 auto;
   opacity: 0;
 }
+.sponsor-logo.platinum {width: 500px;}
+.sponsor-logo.gold {width: 300px;}
+.sponsor-logo.silver {width: 200px;}
 .sponsor-logo img {
   width: 100%;
   height: auto;
