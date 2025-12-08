@@ -243,6 +243,11 @@ html, body {
   100% { transform: scale(1); opacity: 1; }
 }
 
+@keyframes bannerScroll {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
 /* == Layouts ==*/
 
 /* = Box Style 1 = */
