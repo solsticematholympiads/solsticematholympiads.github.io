@@ -4,6 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/assets/style.css">
+    <link id="favicon" rel="icon" href="/assets/icons/smo.png">
+    <script>
+      const path = window.location.pathname;
+  
+      document.getElementById("favicon").href =
+        path.startsWith("/wsmo") ? "/assets/icons/wsmo.png" :
+        path.startsWith("/ssmo") ? "/assets/icons/ssmo.png" :
+                                   "/assets/icons/smo.png";
+    </script>
     <title>Solstice Math Olympiads</title>
   </head>
   <body>
