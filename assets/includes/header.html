@@ -1,4 +1,7 @@
 <header class="header">
+  <a id="site-logo" href="/">
+    <img id="site-logo-img" alt="Logo" style="height:40px;">
+  </a>
   <a class="site-name" href="/">Solstice Math Olympiads</a>
 
   <nav class="header-right">
@@ -45,4 +48,11 @@
       <a class="nav-link" href="/past-contests.html">Past Contests</a>
     </div>
   </nav>
+  <script>
+    const path = window.location.pathname;
+    let logo = "/assets/images/logos/smo.png";
+    if (path.startsWith("/wsmo")) {logo = "/assets/images/logos/wsmo.png";}
+    else if (path.startsWith("/ssmo")) {logo = "/assets/images/logos/ssmo.png";}
+    document.getElementById("site-logo-img").src = logo;
+  </script>
 </header>
