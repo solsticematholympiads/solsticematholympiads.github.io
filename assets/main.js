@@ -8,12 +8,14 @@ fetch("/assets/includes/header.html")
       header.classList.toggle('scrolled', window.scrollY > 10);
     });
   });
+
 /* ==== FOOTER ==== */
 fetch("/assets/includes/footer.html")
   .then(r => r.text())
   .then(html => {
     document.getElementById("footer-container").innerHTML = html;
   });
+
 /* ==== FAQ ==== */
 function toggleFAQ(e){
   document.querySelectorAll('.faq-box').forEach(b=>{
@@ -27,6 +29,7 @@ function toggleFAQ(e){
   }
   e.classList.toggle('open');
 }
+
 /* ==== OBSERVERS ==== */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
