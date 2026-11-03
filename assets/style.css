@@ -391,6 +391,7 @@ main { flex: 1 0 auto; }
 .faq summary:hover { background: var(--periwinkle-200); }
 .faq summary:focus-visible { outline-offset: -3px; }
 .faq__answer { padding: 16px 20px 18px; color: var(--ink-muted); }
+.faq__answer a:not(.btn) { color: var(--navy-700); }
 .faq__answer ul { margin: 8px 0; }
 .faq[open] .faq__answer { animation: faq-in 0.28s var(--ease-out); }
 @keyframes faq-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
